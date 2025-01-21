@@ -3,7 +3,7 @@ if [[ "$1" = "toggle" ]]; then
     open -a Privileges
 fi
 
-is_admin=$(groups torgeir | grep -q -w admin && echo "yes" || echo "no")
+is_admin=$(groups jqwang | grep -q -w admin && echo "yes" || echo "no")
 if [[ "$is_admin" == "yes" ]]; then
     echo "🦸"
 else

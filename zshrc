@@ -121,7 +121,7 @@ function gpg_cache () {
     $(gpgconf --list-dirs libexecdir)/gpg-preset-passphrase \
       -c \
       -P "$(op item get keybase.io --format json | jq -j '.fields[] | select(.id == "password") | .value')" \
-      $(gpg --fingerprint --with-keygrip torgeir@keybase.io | awk '/Keygrip/ {print $3}' | tail -n 1)
+      $(gpg --fingerprint --with-keygrip jqwang@keybase.io | awk '/Keygrip/ {print $3}' | tail -n 1)
   fi
 
   # I don't get this, but the first time around, after the initial signing (gpg -as) failed in the previous step, I need to actually use the key to make the agent cache it. Decrypt an encrypted file to make it stick.

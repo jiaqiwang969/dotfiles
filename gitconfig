@@ -6,12 +6,12 @@
   cleanup = scissors
 
 [user]
-  name = Torgeir Thoresen
-  email = torgeir.thoresen@gmail.com
+  name = jiaqiwang969
+  email = jiaqiwang969@gmail.com
   signingkey = 77836712DAEA8B95
 
 [github]
-  user = torgeir
+  user = jiaqiwang969
 
 [log]
   date = iso

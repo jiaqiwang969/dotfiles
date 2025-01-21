@@ -10,7 +10,7 @@ case $(uname) in
     # Shader caching is a strategy to reduce stuttering and improve overall performance by ‘prebaking’ some of the work your GPU has to do before it has to do so in-game.
     __GL_THREADED_OPTIMIZATION=1                                 # for OpenGL games
     __GL_SHADER_DISK_CACHE=1                                     # to create a shader cache for a game
-    __GL_SHADER_DISK_CACHE_PATH=/home/torgeir/Games/shader-cache # to set the location for the shader cache.
+    __GL_SHADER_DISK_CACHE_PATH=/home/jqwang/Games/shader-cache # to set the location for the shader cache.
 
     # https://wiki.archlinux.org/title/Vulkan#Switching_between_AMD_drivers
     # As of amdvlk 2021.Q3.4, a new switching logic was implemented which enforces AMDVLK as the default and mandates you either

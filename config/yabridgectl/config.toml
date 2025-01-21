@@ -1,6 +1,6 @@
 plugin_dirs = [
-    '/home/torgeir/.wine/drive_c/Program Files/Common Files/VST3',
-    '/home/torgeir/Dropbox/Music/Plugins/vst',
+    '/home/jqwang/.wine/drive_c/Program Files/Common Files/VST3',
+    '/home/jqwang/Dropbox/Music/Plugins/vst',
 ]
 vst2_location = 'centralized'
 no_verify = false

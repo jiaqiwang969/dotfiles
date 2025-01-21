@@ -1,5 +1,5 @@
 {
-  description = "torgeir/dotfiles";
+  description = "jiaqiwang969/dotfiles";
 
   inputs = {
 
