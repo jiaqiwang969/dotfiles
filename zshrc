@@ -211,11 +211,11 @@ bindkey '^x^e' edit-command-line
 
 case $(uname) in
   Darwin)
-    if [[ -d /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk ]]; then
+    if [[ -d /opt/homebrew/share/google-cloud-sdk ]]; then
       # Update PATH for the Google Cloud SDK.
-      source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
+      source /opt/homebrew/share/google-cloud-sdk/path.zsh.inc
       # Enable zsh completion for gcloud.
-      source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
+      source /opt/homebrew/share/google-cloud-sdk/completion.zsh.inc
     fi
     
     # don't type the password on every git pull
