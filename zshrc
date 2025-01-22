@@ -86,7 +86,7 @@ fi
 # gpg
 
 function gpg_sign_something_to_check_cached_key_presens() {
-  echo "1234" | gpg --local-user 922E681804CA8D82F1FAFCB177836712DAEA8B95 -as -
+  echo "1234" | gpg --local-user B3CF01383ADB3051 -as -
 }
 
 function gpg_restart_agent() {
@@ -105,7 +105,7 @@ function gpg_cache () {
 
   # Preset it from 1password. Try signing with it first, only preset it if it fails.
   # https://stackoverflow.com/questions/11381123/how-to-use-gpg-command-line-to-check-passphrase-is-correct
-  PRESET_KEY=$(gpg --pinentry-mode error --local-user 922E681804CA8D82F1FAFCB177836712DAEA8B95 -aso /dev/null <(echo 1234) 2>/dev/null && echo "yes" || echo "no")
+  PRESET_KEY=$(gpg --pinentry-mode error --local-user B3CF01383ADB3051 -aso /dev/null <(echo 1234) 2>/dev/null && echo "yes" || echo "no")
 
   case $(uname) in
     Linux)
